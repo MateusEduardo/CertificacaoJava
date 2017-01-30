@@ -4,9 +4,13 @@ import modelo.Pessoa;
 import modelo.Endereco;
 //import modelo.*; //importar tudo de dentro do pacote modelo
 
+import static modelo.Util.TAMANHO;
+import static modelo.Util.maior;
+//import static modelo.Util.*;
+
+
 //import java.util.Date;
 import java.util.*;
-
 import java.sql.Date; 
 /* 
 Não podemos importar duas classes com o mesmo
@@ -20,7 +24,22 @@ import java.sql.Date;
 Quando chamarmos 
 	Date dataDeTeste; 
 estará criando um Date do tipo
-sql, porque é o import específico e não o geral*/
+sql, porque é o import específico e não o geral
+
+
+OBS2:
+Se importarmos:
+import java.util.*;
+import java.sql.*;
+
+E utilizarmos: 
+Date dataTeste;
+
+Não irá compilar, pois não vai entender qual Date
+está utilizando.
+*/
+import br.com.certificacao.certificacao.modelo.*;
+import br.com.certificacao.certificacao.dao.*;
 
 public class Pedido {
 	Pessoa cliente;
@@ -40,5 +59,10 @@ public class Pedido {
 
 	public Pessoa getCliente() {
 		return cliente;
+	}
+
+	public void calcula(){
+		int t = TAMANHO;
+		maior(3, 10);
 	}
 }
