@@ -10,9 +10,9 @@ public class TesteImpressao {
 		System.out.print(true);
 		System.out.print("asida ");
 		System.out.print("a");
-		System.out.print(new TesteImpressao());
+		*/System.out.println(new TesteImpressao());
 		System.out.println(new int[10]);
-		
+		/*
 		System.out.println(new char[10]); //irá imprimir nada
 		char[] letras = {'a','b'};
 		System.out.println(letras);
